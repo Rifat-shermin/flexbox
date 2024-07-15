@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog with responsive web</title>
+    <style>
+        .view{
+            margin: 0;
+            padding: 0;
+            border: 5px solid rgb(230, 11, 11);
+        }
+        .blog{
+            border: 2px solid teal;
+            margin-top: 20px ;
+
+            display: flex;
+
+        }
+        .blog div{
+            width: 50%;
+        }
+        .image-container{
+            display: flex;
+            justify-content: center;
+        }
+        .image-container img{
+            width: 70%;
+            
+        }
+
+
+        /* Media Quary */
+        /* For smaller device */
+        @media only screen and (max-width:576px) {
+            .blog{
+                flex-direction: column;
+            }
+            .blog div{
+                width: 100%;
+            }
+            .blog-body{
+                background-color: lightblue;
+            }
+            .blog-body p{
+                font-size: 14px;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <section class="view">
+        <div class="blog">
+            <div class="image-container">
+                <img src="image/rose.jpg" alt="">
+            </div>
+            <div class="blog-body">
+                <h2>Red Rose</h2>
+                <p>Thbvjbvkjvfkldbkjbfdkbkfbvcm ,,cx ndjvbfdkjvfsjkj</p>
+                <button>Read More</button>
+            </div>
+        </div>
+        <div class="blog">
+            <div class="image-container">
+                <img src="image/tree.jpg" alt="">
+            </div>
+            <div class="blog-body">
+                <h2>Green Tree</h2>
+                <p>Thbvjbvkjvfkldbkjbfdkbkfbvcm ,,cx ndjvbfdkjvfsjkj</p>
+                <button>Read More</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

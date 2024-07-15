@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediea Quary</title>
+    <style>
+        body{
+            border: 2px solid tomato;
+            width: 1440px;
+            margin: 0, auto;
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        
+
+        }
+        .image_container div{
+            width: 30%;
+            
+            
+        }
+        .image_container img{
+            width: 100%;
+            
+        }
+
+        /* Media Quary */
+
+        @media only screen and (max-width: 567px ) {
+            
+            .container{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+
+            }
+            .image_container{
+                background-color: aquamarine;
+                width: 100%;
+            }
+            .image_container img{
+                width: 100%;
+            }
+            /* .image_container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background-color: aqua;
+                
+            } */
+        }
+    </style>
+</head>
+<body>
+    <Header>
+        <ul>
+            <li>Viewport Meta tag</li>
+            <li>CSS relative unite</li>
+            <li>body max width and horizontal center align</li>
+            <li>image fluid</li>
+            <li>two column flex and media quary with flex direction column</li>
+            <li>multi column: grid layout</li>
+            <li>menu responsive : (need Javascript)</li>
+        </ul>
+    </Header>
+
+    <main>
+        <h1>Image fluid</h1>
+        <div class="container">
+            <div class="image_container">
+                <img src="image/food.jpg" alt="">
+            </div>
+            <div class="image_container">
+                <img src="image/rose1.jpg" alt="">
+            </div>
+            <div class="image_container">
+                <img src="image/tr.jpg" alt="">
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>
